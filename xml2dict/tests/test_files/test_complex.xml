@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ads>
+<ad category='presentation' region='hungary' status='1' language="english">
+	<item codename='author' printable-name='Author'>Bence Faludi</item>
+	<item codename='title' printable-name='Title'>Augmented Reality</item>
+	<item codename='order' printable-name='Order'>2</item>
+	<item codename='description' printable-name='Description'><![CDATA[Making an API from scratch is one of the easiest task, but the information gathering and data organisation is a much more complex challenge. Data are dirty and need to be clean and we have to determine the relationships and hierarchies between them. We have created an API that uses many different sources and I will show you how to use it.]]></item>
+	<url description='TEXT' url='http://hu.linkedin.com/pub/bence-faludi/32/649/65b'/>
+	<url description='TEXT' url='http://www.meetup.com/budapest_data_science/events/117805892/'/>
+	<url description='TEXT' url='http://bfaludi.com/'/>
+</ad>
+<ad category='presentation' region='hungary' status='1' language="english">
+	<item codename='author' printable-name='Author'>Daniel Feles</item>
+	<item codename='title' printable-name='Title'>Data visualization as part of the art scene</item>
+	<item codename='order' printable-name='Order'>1</item>
+	<item codename='description' printable-name='Description'><![CDATA[How data visualization can become art?What is more important, visually astonishing results, exploring new methods of visualizing big amount of data, or just simply choosing an outstanding subject?Daniel Feles is going to explore these questions trough examples of works from all around the world.]]></item>
+	<url description='TEXT' url='http://hu.linkedin.com/pub/daniel-feles/3b/1b8/2b7'/>
+	<url description='TEXT' url='http://www.meetup.com/budapest_data_science/events/117805892/'/>
+</ad>
+<ad category='presentation' region='hungary' status='1' language="english">
+	<item codename='author' printable-name='Author'>Ferenc Huszar</item>
+	<item codename='title' printable-name='Title'>The science of social networks</item>
+	<item codename='order' printable-name='Order'>2</item>
+	<item codename='description' printable-name='Description'><![CDATA[Social platforms are becoming more and more open and transparent, each day their users share hundreds of gigabytes of data publicly. Twitter's active users author about half a billion public tweets a day, the majority of which containing links, images, or other data. This unprecedented wealth of real-time data provides opportunities for researchers and businesses to gain precise quantitative insights into the dynamics of human communication. Someone's age, gender, interests, intelligence, afluence, influence but even political views and sexual orientation can be accurately predicted from data collected on Facebook or Twitter. In my talk I will provide an overview of interesting recent research in this space, and also talk about how PeerIndex use this data to power influence marketing applications.]]></item>
+	<url description='TEXT' url='http://www.linkedin.com/in/fhuszar'/>
+</ad>
+</ads>

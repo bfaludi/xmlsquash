@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<masters>
+   <master id="18500">
+      <main_release>155102</main_release>
+      <images>
+         <image height="588" type="primary" uri="http://api.discogs.com/image/R-155102-1217088991.jpeg" uri150="http://api.discogs.com/image/R-150-155102-1217088991.jpeg" width="600" />
+      </images>
+      <artists>
+         <artist>
+            <id>1520</id>
+            <name>Samuel L. Session</name>
+            <anv>Samuel L</anv>
+            <join />
+            <role />
+            <tracks />
+         </artist>
+      </artists>
+      <genres>
+         <genre>Electronic</genre>
+      </genres>
+      <styles>
+         <style>Techno</style>
+      </styles>
+      <year>2001</year>
+      <title>New Soil</title>
+      <data_quality>Correct</data_quality>
+      <videos>
+         <video duration="490" embed="true" src="http://www.youtube.com/watch?v=yOEOrHIOxK0">
+            <title>Samuel L Session - Velvet</title>
+            <description>Samuel L Session - Velvet</description>
+         </video>
+         <video duration="294" embed="true" src="http://www.youtube.com/watch?v=Vgx1zzANNqk">
+            <title>Samuel L. Session - Body N` Soul</title>
+            <description>Samuel L. Session - Body N` Soul</description>
+         </video>
+      </videos>
+   </master>
+   <master id="57423">
+      <main_release>443809</main_release>
+      <images>
+         <image height="525" type="primary" uri="http://api.discogs.com/image/R-443809-1115049619.jpg" uri150="http://api.discogs.com/image/R-150-443809-1115049619.jpg" width="600" />
+         <image height="525" type="secondary" uri="http://api.discogs.com/image/R-443809-1115049647.jpg" uri150="http://api.discogs.com/image/R-150-443809-1115049647.jpg" width="600" />
+         <image height="600" type="secondary" uri="http://api.discogs.com/image/R-443809-1289800278.jpeg" uri150="http://api.discogs.com/image/R-150-443809-1289800278.jpeg" width="600" />
+      </images>
+      <artists>
+         <artist>
+            <id>3225</id>
+            <name>Vince Watson</name>
+            <anv />
+            <join />
+            <role />
+            <tracks />
+         </artist>
+      </artists>
+      <genres>
+         <genre>Electronic1</genre>
+         <genre>Electronic2</genre>
+         <genre>Electronic3</genre>
+      </genres>
+      <styles>
+         <style>Techno</style>
+         <style>Tech House</style>
+      </styles>
+      <year>2005</year>
+      <title>Sublimina</title>
+      <data_quality>Correct</data_quality>
+      <videos>
+         <video duration="411" embed="true" src="http://www.youtube.com/watch?v=hgCKATy4Ij4">
+            <title>Vince Watson - Sublimina (Encryption)</title>
+            <description>Vince Watson - Sublimina (Encryption)</description>
+         </video>
+         <video duration="225" embed="true" src="http://www.youtube.com/watch?v=934QXDz5NuA">
+            <title>Vince Watson - Sublimina (Decryption)</title>
+            <description>Vince Watson - Sublimina (Decryption)</description>
+         </video>
+         <video duration="410" embed="true" src="http://www.youtube.com/watch?v=_yFyCtr2YUU">
+            <title>Vince Watson - Intrisync</title>
+            <description>Vince Watson - Intrisync</description>
+         </video>
+      </videos>
+   </master>
+</masters>
