@@ -8,8 +8,8 @@ Ez a csomag azért jött létre, hogy az Internet-en több helyen és Stackoverf
 ## Telepítés
 Telepítés a szokásos módon történik.
 
-	$ git clone https://github.com/bfaludi/XML2Dict.git
-	$ cd XML2Dict
+	$ git clone https://github.com/bfaludi/xmlsquash.git
+	$ cd xmlsquash
 	$ python setup.py install
 	
 Csomag egyetlen függősége a **pyexpat**, amely a 2.7-es Python verziótól a Python programozási nyelv része.

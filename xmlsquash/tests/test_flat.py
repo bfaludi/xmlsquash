@@ -37,7 +37,9 @@ class Test_Flat( unittest.TestCase ):
             u'lat': {u'text': u'47.5487066254'}, 
             u'lng': {u'text': u'19.0546094353'}, 
             u'nev': {u'text': u'\xd3budaisziget'}, 
-            u'varosresz_id': {u'text': u'1'}
+            u'varosresz_id': {u'text': u'1'},
+            u'other': {u'text': u'none'},
+            u'other:attr': u'4'
         }
 
     def test_from_string( self ):

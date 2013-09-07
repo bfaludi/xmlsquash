@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<item>
+<item other="4">
   <maxlng>
     19.0613420893
   </maxlng>
@@ -34,4 +34,7 @@
   <varosresz_id>
     1
   </varosresz_id>
+  <other>
+    none
+  </other>
 </item>

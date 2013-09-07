@@ -82,6 +82,12 @@ class XML2Dict( object ):
             self.route.append( self.currentRecord[ name ][-1] )
             self.currentRecord = self.route[-1]
 
+        else:
+            self.route[-1][ name + ':attr' ] = self.currentRecord[ name ]
+            self.currentRecord[ name ] = attrs
+            self.route.append( self.currentRecord[ name ] )
+            self.currentRecord = self.route[-1]
+
     # void
     def StartElementHandler( self, name, attrs ):
 
