@@ -17,10 +17,10 @@ Csomag egyetlen függősége a **pyexpat**, amely a 2.7-es Python verziótól a 
 ## Futtatás
 Bármelyik programban a felhasználása nagyon egyszerű. A következő példa megmutatja a csomag használatát.
 	
-	import xml2dict
+	import xmlsquash
 	
 	fp = codecs.open( 'file.xml', 'rb' )
-	parser = xml2dict.XML2Dict()
+	parser = xmlsquash.XML2Dict()
 	parser.parseFile( fp )
 	fp.close()
 	
@@ -29,7 +29,7 @@ Bármelyik programban a felhasználása nagyon egyszerű. A következő példa m
 ### XML2Dict()
 Az osztály példányosítása nem vár semmilyen paramétert. A kód bármelyik pontjában elvégezhetük. Ez az osztály végzi majd a tényleges XML adat bejárását és konvertálását az expat segítségével.
 
-	from xml2dict import XML2Dict
+	from xmlsquash import XML2Dict
 	parser = XML2Dict()
 
 #### parseString( str )
