@@ -1,4 +1,4 @@
-XML2Dict
+xmlsquash
 ========
 
 Sok programozási nyelv által a legkényesebb fájlformátum az XML, mivel bejárása, és adatainak értelmes, könnyen feldogozható formára hozása közel sem egyszerű és gyors művelet. 

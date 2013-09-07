@@ -19,14 +19,14 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, <see http://www.gnu.org/licenses/>.
 """
 
-import unittest, xml2dict, codecs
+import unittest, xmlsquash, codecs
 
 class Test_Flat( unittest.TestCase ):
 
     def setUp( self ):
 
-        self.file_pointer = codecs.open( 'xml2dict/tests/test_files/test_complex.xml', 'rb' )
-        self.parser = xml2dict.XML2Dict()
+        self.file_pointer = codecs.open( 'xmlsquash/tests/test_files/test_complex.xml', 'rb' )
+        self.parser = xmlsquash.XML2Dict()
         self.expected_result = {
             u'ad': [
                 {
