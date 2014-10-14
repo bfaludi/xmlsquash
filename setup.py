@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.1.1'
+version = '1.0'
 
 setup(
     name = 'xmlsquash',
@@ -12,7 +12,7 @@ setup(
     include_package_data = True,
     zip_safe = False,
     author = 'Bence Faludi',
-    author_email = 'hello@bfaludi.com',
+    author_email = 'b.faludi@mito.hu',
     license = 'GPL',
     install_requires = [],
     test_suite = "xmlsquash.tests",

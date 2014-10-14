@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """
-xml2dict is a Python tool for parse XML documents into python types.
-Copyright (C) 2013, Bence Faludi (hello@bfaludi.com)
+xmlsquash is a Python tool for parse XML documents into python types.
+Copyright (C) 2013, Bence Faludi (b.faludi@mito.hu)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

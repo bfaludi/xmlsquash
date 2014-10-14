@@ -1,47 +1,57 @@
-xmlsquash
-========
 
-Sok programozási nyelv által a legkényesebb fájlformátum az XML, mivel bejárása, és adatainak értelmes, könnyen feldogozható formára hozása közel sem egyszerű és gyors művelet. 
+## xmlsquash
 
-Ez a csomag azért jött létre, hogy az Internet-en több helyen és Stackoverflow-n feltűnő xml2dict megoldásokkal szemben, egy minden XML típusra működőképes átalakítót adjon, amelyet nagyon könnyű használni.
+Converts XML contents into Python's lists and dictionaries without huge memory usage. 
 
-## Telepítés
-Telepítés a szokásos módon történik.
+### Overview
 
-	$ git clone https://github.com/bfaludi/xmlsquash.git
-	$ cd xmlsquash
-	$ python setup.py install
+I know there are more then 100 different approach to this problen in the world but most of them load the whole file into the memory before starts the conversion. 
+
+If you works with big files over 1-2GB those programs will be slow. Furthermore, if you has not got enought memory those solutations will not work at all. 
+
+xmlsquash is streaming the data and not load the file into memory. Of course the converted data will be in the memory, but it is still better.
+
+The package works well with Python **2.x** and **3.x**!
+
+### Installation
+
+Open the terminal and write the following:
+
+	$ easy_install xmlsquash
 	
-Csomag egyetlen függősége a **pyexpat**, amely a 2.7-es Python verziótól a Python programozási nyelv része.
+The program using [pyexpat](https://docs.python.org/3.4/library/pyexpat.html) for  non-validating XML parsing.
 
-## Futtatás
-Bármelyik programban a felhasználása nagyon egyszerű. A következő példa megmutatja a csomag használatát.
-	
+### Usage
+
+#### Parse from String
+
+There is a `parseString` method you have to use.
+		
 	import xmlsquash
 	
-	fp = codecs.open( 'file.xml', 'rb' )
 	parser = xmlsquash.XML2Dict()
-	parser.parseFile( fp )
+	data = parser.parseString( '<item x="3"><x>4</x><x>5</x></item>' )
+	
+	print( data )
+
+#### Parse from File
+
+There is a `parseFile` method you have to use. Its parameter is a file pointer.
+
+	import xmlsquash
+	
+	fp = open('path/to/file.xml', 'rb')
+	parser = xmlsquash.XML2Dict()
+	data = parser.parseFile( fp )
 	fp.close()
 	
-## Függvények
+	print( data )
 
-### XML2Dict()
-Az osztály példányosítása nem vár semmilyen paramétert. A kód bármelyik pontjában elvégezhetük. Ez az osztály végzi majd a tényleges XML adat bejárását és konvertálását az expat segítségével.
+### Exmaples
 
-	from xmlsquash import XML2Dict
-	parser = XML2Dict()
+##### Basic
 
-#### parseString( str )
-Szöveg konvertálására használatos. A függvény egyetlen paramétert vár, amely maga az XML szövege.
-
-#### parseFile( file )
-Fájl kovnertálására használatos. A függvény egy file pointer-t vár. Az átadott osztálynak kell hogy legyen `read` metódusa.
-
-## Példa
-
-### Bevezetés
-Tekintsük a következő XML állományt:
+We want to convert the following file into Python items:
 
 	<?xml version="1.0" encoding="UTF-8"?>
 	<item>
@@ -57,7 +67,7 @@ Tekintsük a következő XML állományt:
 	   <varosresz_id>1</varosresz_id>
 	</item>
 
-Amely a konvertálás után a következő lesz:
+After the conversion the result will be the following:
 
 	{
 	    u'minlng': {u'text': u'19.0478767813'}, 
@@ -72,10 +82,11 @@ Amely a konvertálás után a következő lesz:
 	    u'varosresz_id': {u'text': u'1'}
 	}
 
-Fontos tulajdonsága, hogy a tényleges értéket tartalmazó szöveg a `text` kulcsba kerül, és az adott XML gyökér eleme pedig eltűnik, nem kerül külön feltüntetésre.
+`text` keyword contains the tag's content. The XML's root item will be removed automatically.
 
-### Attribútumok, Listák
-Tekintsünk egy fokkal komolyabb példát, amely már tartalmaz attribútumokat és felsorolásokat is.
+##### Attributes & lists
+
+This example contains attributes and list values. This is the XML's content we want to parse:
 
 	<?xml version="1.0" encoding="UTF-8"?>
 	<masters>
@@ -160,7 +171,7 @@ Tekintsünk egy fokkal komolyabb példát, amely már tartalmaz attribútumokat 
 	   </master>
 	</masters>
 	
-Ennek az XML-nek a konvertálása a következő eredménnyel tér vissza:
+... and this is the result:
 
 	{ u'master': [
 	    {
@@ -290,7 +301,10 @@ Ennek az XML-nek a konvertálása a következő eredménnyel tér vissza:
 	    }
 	]}
 
-Ebből a példából már láthatunk sok dologra példát, az attribútumokok a `dict`-ekbe kerülnek, ha van értékük akkor az `text` változóba kerül. Amennyiben az adott nevű elemből több is szerepel, akkor `list`-be kerülnek az összegyűjtött `dict` elemek.
+You can see the following:
 
-### Kérdés
-Ha van, dobj egy levelet a <a href="mailto:hello@bfaludi.com">hello@bfaludi.com</a> email címre, vagy lessed meg a <a href="http://bfaludi.com">bfaludi.com</a> honlapot.
+- tag's attributes will be a `dict`.
+- `text` keyword will contain the tag's content if it exists.
+- if multiple tags founded with the same name, the recordset will be converted into a `list`.
+
+Enjoy!
