@@ -49,7 +49,7 @@ with open('path/to/file.xml', 'rb') as fd:
 	print(data)
 ```
 
-## Exmaples
+## Examples
 
 ### Basic
 
