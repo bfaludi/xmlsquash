@@ -1,5 +1,10 @@
 # xmlsquash
 
+[![Build Status](https://travis-ci.org/bfaludi/xmlsquash.svg)](https://travis-ci.org/bfaludi/xmlsquash)
+![Downloads](https://img.shields.io/pypi/dm/xmlsquash.svg)
+![Version](https://img.shields.io/pypi/v/xmlsquash.svg)
+![License](https://img.shields.io/pypi/l/xmlsquash.svg)
+
 Converts XML contents into Python's lists and dictionaries without huge memory usage. 
 
 ## Overview
