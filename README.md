@@ -15,7 +15,7 @@ If you work with big files (over 1-2GB) those programs will be slow. Furthermore
 
 `xmlsquash` is streaming the data and not load the file into memory. Of course the converted data will be stored in the memory, but it is still better.
 
-The package works well with Python **2.x** and **3.x**!
+The package works well with Python **2.6+** and **3.3+**!
 
 ## Installation
 
